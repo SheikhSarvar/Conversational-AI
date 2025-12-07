@@ -1,0 +1,40 @@
+[project]
+name = "industry-conversational-ai"
+version = "1.0.0"
+description = "Industry-Specific Conversational AI using Deep Learning for Technology & IT Support"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.35.0",
+    "datasets>=2.14.0",
+    "accelerate>=0.24.0",
+    "peft>=0.6.0",
+    "bitsandbytes>=0.41.0",
+    "sentencepiece>=0.1.99",
+    "protobuf>=3.20.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "scikit-learn>=1.3.0",
+    "streamlit>=1.28.0",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.66.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.25.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+    "pytest>=7.4.0",
+]
