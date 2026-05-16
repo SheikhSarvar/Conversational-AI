@@ -1,157 +1,78 @@
-# Industry-Specific Conversational AI for Technology & IT Support
+# TechBot: Industry-Specific Conversational AI for IT Support
 
 ## Overview
 
-This research project develops an industry-specific conversational AI bot for the Technology and Information Technology (IT) sector using advanced deep learning techniques. The project leverages pre-trained Large Language Models (LLMs) from Hugging Face and fine-tunes them with IT-specific data to create an intelligent support assistant.
+**TechBot** is an advanced conversational AI specialized for the Technology and Information Technology (IT) sector. This project leverages the **Llama-3.2-1B-Instruct** Large Language Model (LLM), fine-tuned using **Parameter-Efficient Fine-Tuning (PEFT)** with **LoRA (Low-Rank Adaptation)** on curated IT-specific datasets.
 
-## Industry Focus
+The goal is to provide a highly accurate, context-aware technical assistant capable of handling software troubleshooting, programming queries, and infrastructure support.
 
-**Technology and Information Technology (IT)**
+## Key Features
 
-The IT support industry faces unique challenges:
-- High volume of repetitive technical queries
-- Need for 24/7 availability
-- Requirement for accurate, context-aware responses
-- Diverse range of technical topics (software, hardware, networking, security)
-
-## Project Objectives
-
-1. Develop a conversational AI bot specialized in IT support
-2. Fine-tune pre-trained LLMs with IT-specific datasets
-3. Achieve high accuracy in understanding and responding to technical queries
-4. Demonstrate practical application in real-world IT support scenarios
-5. Document the complete research process in an academic paper
+- **Domain Specialization**: Fine-tuned on technical documentation, programming forums, and IT support logs.
+- **Efficient Inference**: Supports 8-bit quantization for GPU-efficient deployment.
+- **Context-Aware**: Uses advanced chat templates for multi-turn technical dialogues.
+- **Lightweight Architecture**: Based on Llama-3.2-1B, providing a balance between performance and resource efficiency.
 
 ## Project Structure
 
 ```
 Conversational-AI/
-├── data/
-│   ├── raw/                    # Raw IT support data
-│   ├── processed/              # Cleaned and preprocessed data
-│   └── datasets/               # Final training datasets
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_model_finetuning.ipynb
-│   └── 04_bot_testing.ipynb
-├── src/
-│   ├── data_collection.py      # Data collection scripts
-│   ├── preprocessing.py        # Data preprocessing utilities
-│   ├── model_training.py       # Model fine-tuning code
-│   └── bot_interface.py        # Conversational bot implementation
-├── models/
-│   └── finetuned_model/        # Saved model artifacts
-├── results/
-│   ├── figures/                # Visualizations
-│   ├── tables/                 # Result tables
-│   └── metrics/                # Performance metrics
-├── research_paper/
-│   ├── main_paper.docx         # Research paper document
-│   ├── references.bib          # Bibliography
-│   └── appendices/             # Supplementary materials
-├── presentation/
-│   ├── slides.pptx             # Presentation slides
-│   └── demo_video/             # Bot demonstration video
-├── pyproject.toml
-└── README.md
+├── config/                 # Training and model configurations
+├── data/                   # Data pipeline (raw, processed, validation)
+├── models/                 # Fine-tuned LoRA adapters and checkpoints
+├── notebooks/              # Research, fine-tuning, and evaluation notebooks
+├── scripts/                # Data collection and preprocessing utilities
+├── src/                    # Core application logic (chatbot, model handler)
+├── tests/                  # Test queries and validation suites
+├── PROJECT_DOCS.md         # Comprehensive project documentation (Research Focus)
+└── README.md               # Quick start and overview
 ```
 
 ## Technology Stack
 
-- **LLM Framework**: Hugging Face Transformers
-- **Deep Learning**: PyTorch
-- **Training Platform**: Google Colab (T4 GPU)
-- **Model**: DialoGPT / FLAN-T5 / GPT-2 (to be selected)
-- **Interface**: Streamlit
+- **Base Model**: Llama-3.2-1B-Instruct
+- **Fine-Tuning**: LoRA (via PEFT)
+- **Frameworks**: Hugging Face Transformers, PyTorch
 - **Data Processing**: Pandas, NumPy
-- **Visualization**: Matplotlib, Seaborn
+- **Interface**: CLI (TechBot CLI)
+- **Quantization**: BitsAndBytes (8-bit)
 
-## Setup Instructions
+## Quick Start
 
 ### 1. Install Dependencies
 
+Ensure you have [uv](https://github.com/astral-sh/uv) installed:
+
 ```bash
-# Using uv (recommended)
 uv sync
-
-# Or using pip
-pip install -e .
 ```
 
-### 2. Data Collection
+### 2. Run TechBot
 
+You can run the bot in different modes depending on your hardware:
+
+**CPU Mode:**
 ```bash
-uv run python src/data_collection.py
+uv run python src/chatbot.py --adapter models/conversational-finetuned
 ```
 
-### 3. Data Preprocessing
-
+**GPU Mode (8-bit Quantized):**
 ```bash
-uv run python src/preprocessing.py
+uv run python src/chatbot.py --adapter models/conversational-finetuned --8bit
 ```
 
-### 4. Model Training
+## Project Documentation
 
-Open `notebooks/03_model_finetuning.ipynb` in Google Colab and follow the instructions.
-
-### 5. Run the Bot
-
-```bash
-uv run streamlit run app.py
-```
+For a detailed breakdown of the research methodology, architecture, and evaluation results, please refer to:
+👉 **[PROJECT_DOCS.md](./PROJECT_DOCS.md)**
 
 ## Research Paper
 
-The research paper follows the prescribed template with the following structure:
-
-1. **Title Page** - Author information and affiliation
-2. **Abstract** - Research summary and keywords
-3. **Introduction** - Background, problem statement, objectives
-4. **Industry Analysis** - IT support landscape and requirements
-5. **Literature Review** - Existing research and gaps
-6. **Methodology** - Research design and implementation
-7. **Results** - Findings and performance metrics
-8. **Discussion** - Interpretation and implications
-9. **Conclusion** - Summary and contributions
-10. **References** - Citations
-11. **Appendices** - Code and supplementary materials
-
-## Key Features
-
-- ✅ 100% original, human-written content
-- ✅ Two-paragraph structure per section
-- ✅ Industry-specific fine-tuning
-- ✅ Comprehensive evaluation metrics
-- ✅ Practical bot demonstration
-- ✅ Complete code documentation
-
-## Training Parameters
-
-- **Max Epochs**: 25
-- **GPU**: T4 (Google Colab)
-- **Batch Size**: 8
-- **Learning Rate**: 2e-5
-- **Optimizer**: AdamW
-
-## Evaluation Metrics
-
-- Perplexity
-- BLEU Score
-- Response Accuracy
-- Contextual Relevance
-- User Satisfaction (qualitative)
-
-## License
-
-This project is developed as part of academic research for Master's in CS: Artificial Intelligence and Machine Learning.
+The findings of this project are documented in a comprehensive research paper located in:
+`research_paper/main_paper.md`
 
 ## Author
 
 [Your Name]
 Woolf University
 Master's in CS: Artificial Intelligence and Machine Learning
-
-## Date
-
-December 2025
