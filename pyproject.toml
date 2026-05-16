@@ -23,6 +23,7 @@ dependencies = [
     "tqdm>=4.66.0",
     "jupyter>=1.0.0",
     "ipykernel>=6.25.0",
+    "trafilatura>=2.0.0",
 ]
 
 [build-system]

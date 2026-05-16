@@ -1,0 +1,296 @@
+[
+    {
+        "id": 1,
+        "category": "Python Programming",
+        "question": "How do I read a CSV file in Python?",
+        "expected_topics": [
+            "pandas",
+            "csv module",
+            "file handling"
+        ],
+        "difficulty": "beginner"
+    },
+    {
+        "id": 2,
+        "category": "Python Programming",
+        "question": "What is the difference between a list and a tuple in Python?",
+        "expected_topics": [
+            "data structures",
+            "mutability",
+            "performance"
+        ],
+        "difficulty": "beginner"
+    },
+    {
+        "id": 3,
+        "category": "Python Programming",
+        "question": "Explain Python decorators and provide an example",
+        "expected_topics": [
+            "decorators",
+            "functions",
+            "syntax"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 4,
+        "category": "Web Development",
+        "question": "What is the difference between REST and GraphQL APIs?",
+        "expected_topics": [
+            "API design",
+            "REST",
+            "GraphQL",
+            "comparison"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 5,
+        "category": "Web Development",
+        "question": "How do I implement authentication in a Flask application?",
+        "expected_topics": [
+            "Flask",
+            "authentication",
+            "security",
+            "sessions"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 6,
+        "category": "Web Development",
+        "question": "Explain CORS and how to handle it in a web application",
+        "expected_topics": [
+            "CORS",
+            "security",
+            "HTTP headers",
+            "cross-origin"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 7,
+        "category": "JavaScript",
+        "question": "How does async/await work in JavaScript?",
+        "expected_topics": [
+            "async",
+            "await",
+            "promises",
+            "asynchronous programming"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 8,
+        "category": "JavaScript",
+        "question": "What are the differences between var, let, and const?",
+        "expected_topics": [
+            "variable declaration",
+            "scope",
+            "hoisting"
+        ],
+        "difficulty": "beginner"
+    },
+    {
+        "id": 9,
+        "category": "React",
+        "question": "How can I optimize React component rendering?",
+        "expected_topics": [
+            "React",
+            "performance",
+            "memoization",
+            "optimization"
+        ],
+        "difficulty": "advanced"
+    },
+    {
+        "id": 10,
+        "category": "React",
+        "question": "What is the difference between useEffect and useLayoutEffect?",
+        "expected_topics": [
+            "React hooks",
+            "useEffect",
+            "useLayoutEffect",
+            "lifecycle"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 11,
+        "category": "DevOps",
+        "question": "What is Docker and what are its main benefits?",
+        "expected_topics": [
+            "Docker",
+            "containers",
+            "virtualization",
+            "benefits"
+        ],
+        "difficulty": "beginner"
+    },
+    {
+        "id": 12,
+        "category": "DevOps",
+        "question": "Explain the difference between Docker and Kubernetes",
+        "expected_topics": [
+            "Docker",
+            "Kubernetes",
+            "orchestration",
+            "containers"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 13,
+        "category": "DevOps",
+        "question": "How do I set up a CI/CD pipeline?",
+        "expected_topics": [
+            "CI/CD",
+            "automation",
+            "deployment",
+            "testing"
+        ],
+        "difficulty": "advanced"
+    },
+    {
+        "id": 14,
+        "category": "Databases",
+        "question": "When should I use SQL vs NoSQL databases?",
+        "expected_topics": [
+            "SQL",
+            "NoSQL",
+            "database design",
+            "use cases"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 15,
+        "category": "Databases",
+        "question": "What are database indexes and how do they improve performance?",
+        "expected_topics": [
+            "indexes",
+            "performance",
+            "query optimization"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 16,
+        "category": "Databases",
+        "question": "Explain database normalization and its normal forms",
+        "expected_topics": [
+            "normalization",
+            "database design",
+            "normal forms"
+        ],
+        "difficulty": "advanced"
+    },
+    {
+        "id": 17,
+        "category": "Git",
+        "question": "How do I resolve a merge conflict in Git?",
+        "expected_topics": [
+            "Git",
+            "merge conflicts",
+            "version control"
+        ],
+        "difficulty": "beginner"
+    },
+    {
+        "id": 18,
+        "category": "Git",
+        "question": "What is the difference between git merge and git rebase?",
+        "expected_topics": [
+            "Git",
+            "merge",
+            "rebase",
+            "workflow"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 19,
+        "category": "Cloud Computing",
+        "question": "What are the main differences between AWS, Azure, and GCP?",
+        "expected_topics": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "cloud providers",
+            "comparison"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 20,
+        "category": "Cloud Computing",
+        "question": "Explain the concept of serverless computing",
+        "expected_topics": [
+            "serverless",
+            "Lambda",
+            "Functions",
+            "cloud"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 21,
+        "category": "Security",
+        "question": "What is SQL injection and how can I prevent it?",
+        "expected_topics": [
+            "SQL injection",
+            "security",
+            "prevention",
+            "best practices"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 22,
+        "category": "Security",
+        "question": "Explain JWT authentication and its use cases",
+        "expected_topics": [
+            "JWT",
+            "authentication",
+            "tokens",
+            "security"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 23,
+        "category": "Data Structures",
+        "question": "When should I use a hash table vs a binary search tree?",
+        "expected_topics": [
+            "hash table",
+            "BST",
+            "data structures",
+            "complexity"
+        ],
+        "difficulty": "advanced"
+    },
+    {
+        "id": 24,
+        "category": "Algorithms",
+        "question": "Explain the difference between BFS and DFS graph traversal",
+        "expected_topics": [
+            "BFS",
+            "DFS",
+            "graph algorithms",
+            "traversal"
+        ],
+        "difficulty": "intermediate"
+    },
+    {
+        "id": 25,
+        "category": "System Design",
+        "question": "How would you design a URL shortening service like bit.ly?",
+        "expected_topics": [
+            "system design",
+            "scalability",
+            "databases",
+            "architecture"
+        ],
+        "difficulty": "advanced"
+    }
+]
